@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "elon-flow",
+  "version": "0.1.0",
+  "description": "A first-principles engineering operating system for deciding what should exist, proving what is true, building the minimum correct implementation, and improving the mechanism that produces the work.",
+  "author": {
+    "name": "Samwise-x"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Elon-Flow",
+        "shortDescription": "First-principles engineering",
+        "longDescription": "Apply first-principles reasoning, aggressive deletion, governing-constraint analysis, empirical verification, minimal implementation, and recursive production-system improvement to engineering work.",
+        "developerName": "Samwise-x",
+        "category": "Productivity",
+        "capabilities": ["Interactive"],
+        "defaultPrompt": [
+          "Use Elon-Flow on this engineering problem.",
+          "Challenge this design from first principles before we build it.",
+          "Find the governing constraint and the smallest experiment that can move it."
+        ]
+      }
+    }
+  }
+}
