@@ -1,0 +1,50 @@
+[
+  {
+    "id": "no-op",
+    "prompt": "The requested behavior already exists and is verified. What should Elon-Flow do?",
+    "expected_route": [],
+    "must": "Stop without manufacturing more work."
+  },
+  {
+    "id": "observable-uncertainty",
+    "prompt": "We do not know whether the new parser is actually faster under the real workload.",
+    "expected_route": ["experiment"],
+    "must": "Measure before claiming an improvement."
+  },
+  {
+    "id": "bug",
+    "prompt": "Users report that save sometimes returns success but the data is missing after reload.",
+    "expected_route": ["debug"],
+    "must": "Build a red-capable reproduction before theorizing or patching."
+  },
+  {
+    "id": "small-known-change",
+    "prompt": "The requirement is settled: parse this field using an existing standard-library function.",
+    "expected_route": ["implement"],
+    "must": "Use the smallest existing capability and avoid new abstraction."
+  },
+  {
+    "id": "contested-architecture",
+    "prompt": "Two module boundaries are plausible and the choice changes ownership and testability.",
+    "expected_route": ["architecture"],
+    "must": "Compare justified structures rather than defaulting to simplicity or abstraction."
+  },
+  {
+    "id": "repeated-correction",
+    "prompt": "This is the third time an agent has made the same invalid state transition despite written instructions.",
+    "expected_route": ["compound"],
+    "must": "Move the repeated correction toward structural enforcement."
+  },
+  {
+    "id": "inherited-requirement",
+    "prompt": "Everyone says this queue is required because the old system had one, but nobody can explain the constraint.",
+    "expected_route": ["first-principles"],
+    "must": "Challenge the requirement before optimizing or automating it."
+  },
+  {
+    "id": "performance-change",
+    "prompt": "We have a baseline and want to change one implementation detail, then prove whether system throughput improved.",
+    "expected_route": ["experiment", "implement", "experiment"],
+    "must": "Define the measurement, make one justified change, and verify on the same relevant surface."
+  }
+]
